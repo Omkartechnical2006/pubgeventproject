@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PubgEvent</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin2.css">
+</head>
+
+<body>
+    <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding"
+        style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+            style="width:100%;font-size:22px;">Close Menu</a>
+        <div class="w3-container" onclick="window.location.href='/'">
+            <img src="images/gamecon.png" style="width: 80%; padding-top: 20px;" alt="">
+        </div>
+        <div class="w3-bar-block">
+            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+            <a href="#users" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Users</a>
+            <a href="#contacts" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contacts</a>
+            <a href="#donate-me" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Donate me!</a>
+            <a href="#coming-soon" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Coming
+                soon.....</a>
+        </div>
+    </nav>
+    <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+        <img src="images/gamecon.png" width="30%">
+    </header>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:80px">
+            <h1 class="w3-jumbo"><b>Interior Design</b></h1>
+            <h1 class="w3-xxxlarge w3-text-red"><b>An ethical hacker: Omkar</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+        </div>
+
+        <!-- Designers -->
+        <div class="w3-container" id="designers" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Designers.</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+        </div>
+
+        <!-- The Team -->
+        <div class="w3-row-padding w3-grayscale">
+            <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                    <img src="images/designers/person1.jpg" alt="John" style="width:100%">
+                    <div class="w3-container">
+                        <h3>John Doe</h3>
+                        <p class="w3-opacity">CEO & Founder</p>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                            elementum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                    <img src="images/designers/person2.jpg" alt="Jane" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Jane Doe</h3>
+                        <p class="w3-opacity">Designer</p>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                            elementum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-light-grey">
+                    <img src="images/designers/person3.jpg" alt="Mike" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Mike Ross</h3>
+                        <p class="w3-opacity">Architect</p>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                            elementum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Packages / Pricing Tables -->
+        <div class="w3-container" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Packages.</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure</p>
+        </div>
+
+        <div class="w3-row-padding">
+            <div class="w3-half w3-margin-bottom">
+                <ul class="w3-ul w3-light-grey w3-center">
+                    <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+                    <li class="w3-padding-16">website</li>
+                    <li class="w3-padding-16">10 hours support</li>
+                    <li class="w3-padding-16">Basic web App</li>
+                    <li class="w3-padding-16">20% customer discount</li>
+                    <li class="w3-padding-16">Good deals</li>
+                    <li class="w3-padding-16">
+                        <h2>$ 1</h2>
+                        <span class="w3-opacity">per website</span>
+                    </li>
+                    <li class="w3-light-grey w3-padding-24">
+                        <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w3-half">
+                <ul class="w3-ul w3-light-grey w3-center">
+                    <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
+                    <li class="w3-padding-16">Web App</li>
+                    <li class="w3-padding-16">50 hours support</li>
+                    <li class="w3-padding-16">website</li>
+                    <li class="w3-padding-16">50% customer discount</li>
+                    <li class="w3-padding-16">GREAT deals</li>
+                    <li class="w3-padding-16">
+                        <h2>$ 10</h2>
+                        <span class="w3-opacity">per website</span>
+                    </li>
+                    <li class="w3-light-grey w3-padding-24">
+                        <button class="w3-button w3-red w3-padding-large w3-hover-black">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="users" id="users">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Users Data</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <div class="filterbtns">
+                <button onclick="fltbtn(this)" class="btn info all">All</button>
+                <button onclick="fltbtn(this)" class="btn info today">Today</button>
+                <button onclick="fltbtn(this)" class="btn info pr7days">back 7 days</button>
+                <button onclick="fltbtn(this)" class="btn info none">None</button>
+            </div>
+            <div class="order-box">
+                <%for(user of users){%>
+                    <div class="order-om">
+                        <img id="image" src="<%=user.imgurl%>" alt="NA">
+                        <div class="status">
+                            <form class="status" action="/admin/<%=user._id%>?_method=DELETE" method="post">
+                            <p class="progress">Email: <span id="email">
+                                    <%=user.email%>
+                                </span> <button class="ml-7" onclick="copytxt(this)">copy</button>
+                                <button class="danger">Delete</button></p>
+                            </form>
+                            <p class="progress">password: <span id="password">
+                                    <%=user.password%>
+                                </span> <button class="ml-7" onclick="copytxt(this)">copy</button></p>
+                            <p class="warn progress">Date: <span>
+                                    <%=user.createdAt%>
+                                </span></p>
+                        </div>
+                    </div>
+                    <%}%>
+            </div>
+        </div>
+        <br>
+        <hr style="color: red;" />
+        <div id="contacts">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Messages</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <div class="contacts">
+                <%for(let contact of contacts){%>
+                    <div class="coupon-om">
+                        <div class="price-container">
+                            <h3>country: <%=contact.country%>
+                            </h3>
+                        </div>
+                        <div class="price-container" style="background-color:white">
+                            <h2><b>Name: <%=contact.firstname%>
+                                        <%=contact.lastname%></b></h2>
+                            <p>Msg: <%=contact.subject%>
+                            </p>
+                        </div>
+                        <div class="price-container">
+                            <p>Email id: <span class="promo">
+                                    <%=contact.email%>
+                                </span></p>
+                            <p class="expire">Date: <%=contact.createdAt%>
+                            </p>
+                        </div>
+                    </div>
+                    <%}%>
+            </div>
+        </div>
+        <hr style="color: red;" />
+        <!-- donate me -->
+
+        <div id="donate-me">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Donate me!</b></h1>
+            <p>Donate me so I will add more features in this site like facebook authentication or more....</p>
+        </div>
+        <hr style="color: red;" />
+
+        <!-- features coming soon  -->
+        <div id="coming-soon">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Features coming soon......</b></h1>
+            <p>1. Facebook login for users without login they can't proceed with rewards.</p>
+            <p>2. Fake messages shower, who will show every time <br><span style="color: green;">"rohan001 succesfully
+                    recieved Ak47."</span><br><span style="color: green;">rohit0054 sucessfully recieved
+                    sniperShot.</span></p>
+            <p>3. Fetch location to users and show to admin where the user exists has requested for reward</p>
+            <p>4. We'll be using filter for admin previlages...</p>
+            <p>5. Show animation successfully placed the reward!!</p>
+            <p>6. admin will be able to upload new or delete reward from user site...</p>
+
+        </div>
+    </div>
+    <script>
+
+    </script>
+    <script src="script/detail.js"></script>
+</body>
+
+</html>
