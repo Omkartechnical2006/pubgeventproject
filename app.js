@@ -9,10 +9,12 @@ const port = process.env.PORT;
 const rewardclaim = require("./routes/rewardclaim.js");
 const admin = require("./routes/admin.js");
 const contact = require("./routes/contact.js");
+const methodOverride = require("method-override");
 
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, "/public")));
 app.use(express.urlencoded({ extended: true }));
+app.use(methodOverride("_method"));
 app.set("views", path.join(__dirname, "views"));
 app.engine('ejs', ejsMate);
 
