@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PubgEvent</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/faq.css">
+</head>
+
+<body>
+    <%- include("../includes/navbar.ejs") %>
+        <h2>FREQUENTLY ASKED QUESTIONS</h2>
+        <div class="container">
+            <div class="box">
+            <div class="question" onclick="ansshow(this)"><span>Why my status is in processing?</span><span>+</span></div>
+            <div class="answer"><b><i>If you have submitted your request, our team will check your credentials or also check are you elegible for the reward or not, please wait patiently... you can check your reward status: <a href="/track">Track your reward</a>. <br> it may take 24-48 hours to get your reward. For any more enquiry <a href="/contact">Contact Us</a></i></b></div>
+        </div>
+        <div class="box">
+            <div class="question" onclick="ansshow(this)"><span>How long it will take to recieve my reward?</span><span>+</span></div>
+            <div class="answer"><b><i>It may take 24-48 hours. track your reward status: <a href="/track">Track your reward</a></i></b></div>
+        </div>
+        <div class="box">
+            <div class="question" onclick="ansshow(this)" ><span>Is it trusted?</span><span>+</span></div>
+            <div class="answer"><b><i>It's genuine and trusted by developers of Pubg Community..., No need to worry you.., check your <a onclick="document.getElementById('elegibility').click();" href="#elegibility"><b>elegibility</b></a> to take your reward.</i></b></div>
+        </div>
+        <div class="box">
+            <div class="question" onclick="ansshow(this)" ><span> Why my delivery is failed?</span><span>+</span></div>
+            <div class="answer"><b><i>It may your credentials was wrong..., or may you were not elegible to get this reward also check your elegibility..</i></b></div>
+        </div>
+        <div class="box">
+            <div class="question" id="elegibility" onclick="ansshow(this)" ><span>Can all Pubg users take benefit of this? Elegibility?</span><span>+</span></div>
+            <div class="answer"><b><i>Your level should be greater than 30, so that you can get your reward successfully.</i></b></div>
+        </div>
+        <div class="box">
+            <div class="question" onclick="ansshow(this)" ><span>I need more help, How can I contact?</span><span>+</span></div>
+            <div class="answer"><b><i>If you have been facing any problem, contact us: <a href="/contact">Pubg support team!</a></i></b></div>
+        </div>
+        <script src="script/faq.js"></script>
+</body>
+
+</html>
